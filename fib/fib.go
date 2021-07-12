@@ -1,4 +1,4 @@
-package les02
+package fib
 
 import "fmt"
 
