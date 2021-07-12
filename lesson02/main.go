@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/madina-omarkulova/gocourse_epam/lesson02/les02"
+	"/Users/madinaomarkulova/gocourse_epam/lesson02/les02"
 )
 
 func main() {
