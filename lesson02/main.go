@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"/Users/madinaomarkulova/gocourse_epam/lesson02/les02"
+	"github.com/madina-omarkulova/gocourse_epam/fib"
 )
 
 func main() {
@@ -11,5 +11,5 @@ func main() {
 	defer fmt.Println("Task completed.")
 	fmt.Println("Please enter the number:")
 	fmt.Scan(&a)
-	les02.Fibb(a)
+	fib.Fibb(a)
 }
