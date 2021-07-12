@@ -1,16 +1,28 @@
-package les02
+package fib
 
 import "fmt"
 
-func Fibb(n int) {
+func Printer(n int) {
 	a, b, c := 0, 1, 1
+	fmt.Print("0 1 ")
+	for c <= n {
+		fmt.Print(c, " ")
+		a = b
+		b = c
+		c = a + b
+	}
+	fmt.Print("\n")
+}
+
+func Fibb(n int) int {
+	b, c := 1, 1
 	if n == 1 {
-		fmt.Print("0 ")
+		return 0
 	} else if n == 2 {
-		fmt.Print("1  ")
+		return 1
 	}
 	for i := 2; i < n; i++ {
-		fmt.Print(c)
-		a, b, c = b, c, a+b
+		b, c = c, c+b
 	}
+	return c
 }
