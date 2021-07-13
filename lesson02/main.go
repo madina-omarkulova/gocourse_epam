@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
+	defer fmt.Println("Task is completed.")
 	var a int
-	defer fmt.Println("Task completed.")
 	fmt.Println("Please enter the number:")
 	fmt.Scan(&a)
 	fib.Printer(a)
