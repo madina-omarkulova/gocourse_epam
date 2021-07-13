@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/madina-omarkulova/gocourse_epam/fib"
+	"github.com/madina-omarkulova/gocourse_epam/lesson02/fib"
 )
 
 func main() {
