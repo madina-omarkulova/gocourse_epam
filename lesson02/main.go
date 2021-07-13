@@ -11,5 +11,5 @@ func main() {
 	defer fmt.Println("Task completed.")
 	fmt.Println("Please enter the number:")
 	fmt.Scan(&a)
-	fib.Printer(fib.Fibb(a))
+	fib.Printer(a)
 }
