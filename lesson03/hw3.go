@@ -5,12 +5,12 @@ import (
 	"sort"
 )
 
-func averv(a [6]int) float64 {
+func averv(a []int) float64 {
 	s := 0.0
 	for _, k := range a {
 		s += float64(k)
 	}
-	return s / 6
+	return s / float64(len(a))
 }
 
 func max(s []string) string {
