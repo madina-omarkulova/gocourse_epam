@@ -45,17 +45,6 @@ func main() {
 	printSorted(p)
 }
 
-func myPrint(k []int) {
-	fmt.Print("[")
-	for i, l := range k {
-		fmt.Print(l)
-		if i != len(k)-1 {
-			fmt.Print(", ")
-		}
-	}
-	fmt.Println("]")
-}
-
 func averv(a []int) float64 {
 	if len(a) == 0 {
 		return 0
