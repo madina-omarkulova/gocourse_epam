@@ -39,6 +39,7 @@ func DescribeShape(s Shape) {
 	fmt.Printf("Area: %.2f\n", s.Area())
 	fmt.Printf("Perimeter: %.2f\n", s.Perimeter())
 }
+
 func main() {
 	// choose your own dimensions
 	c := Circle{radius: 5}
@@ -48,4 +49,12 @@ func main() {
 	}
 	DescribeShape(c)
 	DescribeShape(r)
+}
+
+func (s Circle) String() string {
+	return fmt.Sprintf("Circle: radius %.2f", s.radius)
+}
+
+func (s Rectangle) String() string {
+	return fmt.Sprintf("Rectangle with height %.2f and width %.2f ", s.height, s.width)
 }
