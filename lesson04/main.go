@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/madina-omarkulova/gocourse_epam/lesson04/Shapes"
+	"github.com/madina-omarkulova/gocourse_epam/lesson04/shapes"
 )
 
-func DescribeShape(s Shape) {
+func DescribeShape(s shapes.Shape) {
 	fmt.Println(s)
 	fmt.Printf("Area: %.2f\n", s.Area())
 	fmt.Printf("Perimeter: %.2f\n", s.Perimeter())
@@ -14,10 +14,10 @@ func DescribeShape(s Shape) {
 
 func main() {
 	// choose your own dimensions
-	c := Shapes.Circle{
+	c := shapes.Circle{
 		radius: 5,
 	}
-	r := Shapes.Rectangle{
+	r := shapes.Rectangle{
 		height: 10,
 		width:  25,
 	}
