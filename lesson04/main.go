@@ -15,11 +15,11 @@ func DescribeShape(s shapes.Shape) {
 func main() {
 	// choose your own dimensions
 	c := shapes.Circle{
-		radius: 5,
+		Radius: 5,
 	}
 	r := shapes.Rectangle{
-		height: 10,
-		width:  25,
+		Height: 10,
+		Width:  25,
 	}
 	DescribeShape(c)
 	DescribeShape(r)

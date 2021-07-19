@@ -1,4 +1,4 @@
-package Shapes
+package shapes
 
 import (
 	"fmt"
@@ -6,16 +6,16 @@ import (
 )
 
 type Circle struct {
-	radius float64
+	Radius float64
 }
 
 func (c Circle) Area() float64 {
-	return (math.Pi * c.radius * c.radius)
+	return (math.Pi * c.Radius * c.Radius)
 }
 
 func (c Circle) Perimeter() float64 {
-	return (math.Pi * c.radius * 2)
+	return (math.Pi * c.Radius * 2)
 }
 func (s Circle) String() string {
-	return fmt.Sprintf("Circle: radius %.2f", s.radius)
+	return fmt.Sprintf("Circle: radius %.2f", s.Radius)
 }
