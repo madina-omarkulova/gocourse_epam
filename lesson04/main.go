@@ -2,20 +2,9 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/madina-omarkulova/gocourse_epam/lesson04/Shapes"
 )
-
-type Shape interface {
-	Area() float64
-	Perimeter() float64
-}
-
-type Circle struct {
-	radius float64
-}
-type Rectangle struct {
-	height float64
-	width  float64
-}
 
 func DescribeShape(s Shape) {
 	fmt.Println(s)
@@ -25,8 +14,10 @@ func DescribeShape(s Shape) {
 
 func main() {
 	// choose your own dimensions
-	c := Circle{radius: 5}
-	r := Rectangle{
+	c := Shapes.Circle{
+		radius: 5,
+	}
+	r := Shapes.Rectangle{
 		height: 10,
 		width:  25,
 	}

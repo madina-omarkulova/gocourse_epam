@@ -2,6 +2,11 @@ package Shapes
 
 import "fmt"
 
+type Rectangle struct {
+	height float64
+	width  float64
+}
+
 func (r Rectangle) Area() float64 {
 	return (r.height * r.width)
 }
